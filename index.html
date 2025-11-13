@@ -10,6 +10,14 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <style>
+      .form-control,
+      .input-group-text {
+        border-radius: 30px;
+        padding: 10px;
+      }
+
+    </style>
   </head>
   <body>
     <!-- 반응형 레이아웃 -->
@@ -21,9 +29,35 @@
       <!-- 재영님 : 검색어 + 메인 이미지 -->
       <div class="row">
         <!-- 검색어 입력 -->
-        <div class="col-lg-4 col-md-6 col-sm-12">Column</div>
+        <div class="col-6 offset-3">
+          <div class="input-group mb-3">
+            <input type="text" 
+            class="form-control" 
+            placeholder="검색어를 입력해주세요." 
+            aria-label="Recipient's username" 
+            aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2">             
+               <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.9381 8C15.9381 3.58172 12.3564 0 7.93811 0C3.85849 0 0.492098 3.05369 0 7H2.02106C2.49714 4.16229 4.96511 2 7.93811 2C11.2518 2 13.9381 4.68629 13.9381 8C13.9381 11.3137 11.2518 14 7.93811 14C4.96511 14 2.49714 11.8377 2.02106 9H1.16572e-08C0.492098 12.9463 3.85849 16 7.93811 16C9.78682 16 11.4891 15.3729 12.8438 14.3199L18.3021 19.7782L19.7163 18.364L14.258 12.9056C15.311 11.551 15.9381 9.84871 15.9381 8Z"
+                  fill="#29363D"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
         <!-- 메인 이미지 -->
-        <div class="col-lg-4 col-md-6 col-sm-12">Column</div>
+        <div class="col-12">
+        <img src="/online-book/images/main-image.png" class="img-fluid" alt="main_images">
+        </div>
       </div>
       <!-- 공지사항, 신간도서 -->
       <div class="row">
