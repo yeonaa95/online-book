@@ -10,6 +10,65 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <style>
+      .container {
+        margin-top: 20px;
+        margin-bottom: 80px;
+      }
+      div {
+        background-color: lightyellow;
+        border: 1px solid gray;
+      }
+      .row:nth-child(2) div {
+        background-color: rgb(255, 255, 174);
+      }
+      .row:nth-child(3) div {
+        background-color: rgb(174, 250, 255);
+      }
+      .row:nth-child(4) div {
+        background-color: rgb(255, 255, 91);
+      }
+      .row:nth-child(5) div {
+        background-color: rgb(255, 255, 0);
+      }
+
+      .notice-btn {
+        padding: 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 1em;
+        height: 1em;
+      }
+      .seperator {
+        display: none;
+      }
+      .title-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .title-container .btn-icon:hover {
+        background-color: #d8ddde;
+        border-radius: 5px;
+      }
+      .notice-info table {
+        font-size: 0.8rem;
+        color: #29363d;
+        table-layout: fixed;
+        width: 100%;
+      }
+      .notice-info td {
+        padding: 5px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      .notice-info th {
+        color: #2e6ff2;
+      }
+    </style>
   </head>
   <body>
     <!-- 반응형 레이아웃 -->
@@ -28,9 +87,67 @@
       <!-- 공지사항, 신간도서 -->
       <div class="row">
         <!-- 연화님 : 공지사항 -->
-        <div class="col-lg-3 col-md-4 col-sm-6">Column</div>
+        <div class="col-6">
+          <div class="notice">
+            <div class="title-container">
+              <h3 class="fs-lg-4 fs-md-5 fs-sm-6 fw-bold">공지사항</h3>
+              <button type="button" class="btn btn-icon">
+                <span class="icon"
+                  ><svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 0V6H14V8H8V14H6V7.999L0 8V6L6 5.999V0H8Z"
+                      fill="#29363D"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <div class="notice-info">
+              <table>
+                <tbody>
+                  <tr>
+                    <th width="70">공지사항</th>
+                    <td>
+                      청춘의 하였으며, 이것은 몸이 때문이다. 사는가 고동을
+                      용기가 충분히 청춘
+                    </td>
+                    <td width="100" align="center">2023.03.11</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      청춘의 하였으며, 이것은 몸이 때문이다. 사는가 고동을
+                      용기가 충분히 청춘 것이다. 얼마
+                    </td>
+                    <td width="100" align="center">2023.02.20</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      청춘의 하였으며, 이것은 몸이 때문이다. 사는가 고동을
+                      용기가 충분히 청춘 것이다. 얼마
+                    </td>
+                    <td width="100" align="center">2023.02.13</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      청춘의 하였으며, 이것은 몸이 때문이다. 사는가 고동을
+                      용기가 충분히 청춘 것이다. 얼마
+                    </td>
+                    <td width="100" align="center">2023.01.01</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
         <!-- 준환님 : 신간도서 -->
-        <div class="col-lg-3 col-md-4 col-sm-6">Column</div>
+        <div class="col-6">Column</div>
       </div>
       <!-- 영종님 : 카드 리스트 -->
       <div class="row">
